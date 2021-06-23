@@ -1,0 +1,284 @@
+/*Reusable classes*/
+.scroll-table{
+    overflow-x: scroll;
+}
+.relative{position: relative;}
+.fixed-position{
+    position: fixed;
+} 
+
+.body-margin{
+    margin-top:70px;
+}
+
+.no-list-style{
+    list-style:none;
+}
+
+.theme-back-color{
+    background:#2196f3;
+}
+
+.otherfield-error{
+      color: #d50000;
+      position: absolute;
+      font-size: 12px;
+      margin-top: 3px;
+      visibility: visible;
+      display: block;
+}
+.emptyfield-error{
+      color: #d50000;
+      position: absolute;
+      font-size: 12px;
+      margin-top: 3px;
+      visibility: visible;
+      display: block;
+    }
+.mandatory-field {
+    color: red;
+    font-size: 17px;
+}
+/*specific classes */
+   
+/* nav bar and drawer */
+    .logo-img{
+        width: 200px;
+    }
+ #view-source {
+        position: fixed;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        z-index: 900;
+      }
+    	
+      .nav-size{
+    	  width:240px;
+    	}
+      nav ul ul {
+        display: none;
+        transition: opacity 1s;
+      }
+      
+      .out {
+        opacity: 1;
+      }
+      
+      .in {
+        opacity: 1;
+      }
+
+      .rotate{
+    -moz-transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    }
+    
+      .rotate.down{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+    }
+
+
+ nav.custom-cont a
+{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+nav.pullUpDown a:before, nav.pullUpDown a:after
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.2;
+    transition: all 0.3s;
+}
+ 
+nav.pullUpDown a:before
+{
+    top: 10%;
+} 
+
+nav.pullUpDown a:after
+{
+    bottom: 10%;
+}
+
+nav.pullUpDown a:hover:before{
+    height: 100%;
+    top: 0;
+    }
+
+nav.pullUpDown a:hover:after{
+    height: 100%;
+    bottom: 0;
+}
+
+nav>a.active-main {
+   background: rgba(255, 255, 255, 0.4);
+       content: none;
+}
+
+nav>a.active-main:after,nav>a.active-main:before{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    background: #FFF;
+    opacity: 0.2;
+    transition: all 0.3s;
+    content: none;
+}
+
+#side-nav ul{
+    cursor:pointer;
+    padding: 0px;
+}
+
+#side-nav ul ul{
+padding-left:8px;
+}
+
+.active-side{
+      background-color: #e0e0e0;
+}
+
+.sign-in {
+    position: fixed;
+    display: block;
+    right: 0;
+    margin-right: 20px;
+    top: 0;
+    margin-top: 80px;
+    z-index: 900;
+    }
+.sign-in-close{
+   position: fixed;
+    display: block;
+    right: 0;
+    margin-right: 20px;
+    top: 0;
+    margin-top: 80px;
+    z-index: 900; 
+} 
+    .overlay-sign-in{
+    background:transparent url(../images/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.box-sign-in{
+    position:fixed;
+    top:-200px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+}
+
+
+.sal-drawer .sal-drawer-header{
+    background:url(../images/office.jpg);
+    align-items: center;
+   }
+
+/* Home Slider */
+.jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('../images/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+        
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('../images/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+
+        .store-table{
+            font-size: 11px;
+        }
+        .store-table td{
+            padding: 12px 10px;
+        }
+/* Resize the th font*/
+#myTable tr>th{
+    font-size: 14px;
+    background: #ccc;
+    text-align: center;
+        /*width: 10% !important;*/
+}
+
+.myTable th{
+    font-size: 14px;
+    background: #ccc;
+}
+
+.margin{
+    margin-top: -35px;
+}
+
+#login div{
+        height  :  100%;
+        width   :  100%;
+}
+.hiddenRow {
+    padding: 0 !important;
+}
